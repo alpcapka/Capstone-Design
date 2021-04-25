@@ -1,0 +1,48 @@
+[data-theme="dark"] .bg-light {
+  color: #1c1e21;
+  background-color: #1c1e21 !important;
+}
+
+[data-theme="dark"] header .logo p {
+  color: white;
+}
+
+[data-theme="dark"] .logo .menu-button span {
+  background-color: white;
+}
+
+[data-theme="dark"] .logo .menu-button.active span {
+  background-color: white;
+}
+
+[data-theme="dark"] {
+  background-color: #1c1e21;
+}
+
+[data-theme="dark"] .btn-outline-primary {
+  color: #28a745;
+  border: 1px solid #28a745;
+}
+
+[data-theme="dark"] .btn-outline-primary:hover {
+  color: white;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+[data-theme="dark"] .btn-outline-primary:not(:disabled):not(.disabled):active{
+  color: white;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+[data-theme="dark"] .btn-outline-dark {
+  border: 1px solid white;
+  color: white;
+}
+
+[data-theme="dark"] .btn-outline-dark:hover {
+  color: black;
+  background-color: white;
+  border-color: white;
+}
