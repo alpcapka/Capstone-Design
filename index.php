@@ -1,3 +1,6 @@
+<?
+  include "lib.php";
+?>
 <!doctype html>
 <html lang="ko">
   <head>
@@ -14,10 +17,10 @@
     <div id="wrap">
       <!-- header -->
       <?
-      require_once ("header.php");
+      require_once ("./contents/header.php");
       ?>
       <!-- sidebar -->
-      <div class="sidenav navbar-light bg-light">
+      <div id="sidenav" class="sidenav navbar-light bg-light">
           <div class="sidenav-header">
           </div>
           <div class="sidenav-menu">
@@ -27,7 +30,7 @@
       <!-- container -->
       <div class="container con position-relative">
         <?
-        require_once("mainboard.php");
+        require_once("./contents/mainboard.php");
         ?>
       </div>
     </div>  

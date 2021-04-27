@@ -1,7 +1,7 @@
-[data-theme="dark"] .bg-light {
+/* [data-theme="dark"] .bg-light {
   color: #1c1e21;
   background-color: #1c1e21 !important;
-}
+} */
 
 [data-theme="dark"] header .logo p {
   color: white;

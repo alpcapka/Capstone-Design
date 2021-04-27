@@ -8,7 +8,7 @@
             <span></span>
             </a>
             <a class="navbar-brand" href="#">
-            <img src="./img/logo.png" width="35" height="35" alt="">
+            <img src="../img/logo.png" width="35" height="35" alt="">
             </a>
             <p>SMOOTH</p>
         </h1>

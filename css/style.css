@@ -45,3 +45,4 @@ header .user-menu li:first-child {margin-left: 0px;}
 .main .cards {position: absolute; display: flex;}
 .main .cards > div {margin-left: 20px;}
 .main .cards > div:nth-child(1) {margin: 0;}
+.main .cards li:hover { background-color: #f9f9f9; }
