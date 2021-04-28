@@ -19,14 +19,7 @@
       <?
       require_once ("./contents/header.php");
       ?>
-      <!-- sidebar -->
-      <div id="sidenav" class="sidenav navbar-light bg-light">
-          <div class="sidenav-header">
-          </div>
-          <div class="sidenav-menu">
-          </div>
-      </div>
-      <div class="sidenav-background"></div>
+      
       <!-- container -->
       <div class="container con position-relative">
         <?

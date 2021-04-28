@@ -38,3 +38,21 @@
         </div>
     </nav>
 </header>
+
+<!-- sidebar -->
+<div id="sidenav" class="sidenav navbar-light bg-light">
+    <div class="sidenav-header">
+    </div>
+    <div class="sidenav-menu">
+        <ul>
+            <li><a href="../board/list.php">자유게시판</a></li>
+            <li><a href="#">Shortcuts</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</div>
+<div class="sidenav-background"></div>

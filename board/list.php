@@ -17,7 +17,7 @@
         </thead>
         <?
 
-            $query = "select * from board order by idx desc limit 3 "; 
+            $query = "select * from board order by idx desc"; 
             $result = mysqli_query($conn, $query); 
 
             while($data = mysqli_fetch_array($result)){
