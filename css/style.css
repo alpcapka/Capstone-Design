@@ -13,6 +13,7 @@ header .header-menu .user-menu .btn {text-align: center; padding: 1px .75rem;}
 header .header-menu .dropdown {float: right; margin: 0 15px 8px 15px; height: 30px; text-align: center;}
 header .header-menu .dropdown .btn {text-align: center; padding: 1px .75rem;}
 header .header-menu .dropdown .dropdown-menu {right: 0; left: unset; top:130%;}
+header .header-menu .dropdown .dropdown-menu h3 {font-size: 10px; color: gray; font-weight: 700; letter-spacing: .5px; line-height: 12px; text-transform: uppercase; margin: 8px 0 4px 12px;}
 header .header-menu .dropdown .custom-control .custom-control-label {position: relative;}
 /* header .header-menu .dropdown .custom-control .custom-control-input {visibility: hidden;} */
 header .user-menu li {display: inline-block; margin-left: 10px;}
@@ -29,24 +30,28 @@ header .user-menu li:first-child {margin-left: 0px;}
 .logo .menu-button.active span:nth-child(3) {transform: rotate(-45deg); background: black;}
 
 
-.sidenav {z-index: 4; position: fixed; background: white; top: 0; left: 0; width: 0; height: 100%; opacity: 0; visibility: hidden; transition: 0.3s;}
+.sidenav {z-index: 4; position: fixed; background: white; top: 50px; left: 0; width: 0; height: 100%; opacity: 0; visibility: hidden; transition: 0.3s;}
 @keyframes fadeInLeft {
   0% {opacity: 0; transform: translateX(-25%);}
   100% {opacity: 1; transform: translateX(0);}
 }
 .sidenav.visible {width: 350px; opacity: 1; visibility: visible;}
-.sidenav .sidenav-header {width:350px; height:50px;}
-.sidenav .sidenav-menu {position: relative;}
+.sidenav .sidenav-menu-link {position: relative;}
 .sidenav ul {padding: 0; list-style: none;}
 .sidenav ul a{display: block; height: 100%; width: 100%; line-height: 65px; font-size: 20px; color: black; text-decoration: none; padding-left: 10px; box-sizing: border-box; border-bottom: 1px solid gray; border-top: 1px solid rgba(255,255,255,.1); transition: .4s;}
 .sidenav ul li:hover a{ padding-left: 50px;}
+.sidenav svg {margin-right: 10px;}
 
 .sidenav-background {z-index: 3; position: fixed; top:0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.8); transition: all .3s; opacity: 0; visibility: hidden;}
 .sidenav-background.visible {opacity: 1; visibility: visible;}
 
 .con {width:100%; height:100%; top:54px;}
-.main {position: absolute; display: flex; flex-direction: row; width:915px; margin: 25px auto; left: 215px; justify-content: center;}
-.main .cards {position: absolute; display: flex;}
-.main .cards > div {margin-left: 20px;}
+.main {position: absolute; display: block; flex-direction: row; width:915px; margin: 25px auto; left: 215px; justify-content: center;}
+.main > div {margin-bottom: 10px;}
+.main .cards {display: flex;}
+.main .cards > div {margin-left: 25px;}
 .main .cards > div:nth-child(1) {margin: 0;}
 .main .cards li:hover { background-color: #f9f9f9; }
+
+.main .wraptitle {padding: 5px; border: 1px solid gray; border-radius: 0.25rem;}
+.main .wraptitle > form {float: right; margin-top: 5px;}
