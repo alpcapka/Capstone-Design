@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <header>
     <nav class="navbar fixed-top navbar-light bg-light">
         <h1 class="logo">
@@ -14,8 +17,15 @@
         </h1>
         <div class="header-menu">
             <ul class="user-menu">
-            <li><button type="button" onclick="location.href='#'" class="btn btn-outline-primary">로그인</button></li>
-            <li><button type="button" onclick="location.href='#'" class="btn btn-outline-primary">회원 가입</button></li>
+            <?php
+                if(isset($_SESSION['useremail'])){
+                    echo "<li><button type='button' onclick=\"location.href='../registeration/logout.inc.php'\" class='btn btn-outline-primary'>로그아웃</button></li>";
+                }
+
+                else{
+                    echo "오류";
+                }
+            ?>
             </ul>
             <div class="dropdown">
                 <button type="button" class="btn btn-outline-dark" data-bs-toggle="dropdown" aria-expanded="false">
