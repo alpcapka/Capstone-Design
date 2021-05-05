@@ -1,5 +1,7 @@
 <!-- This is login page -->
-
+<?
+    require_once('lib.php');
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -11,6 +13,12 @@
     <link rel="stylesheet" href="./css/registeration.css?after" type="text/css" media="screen" title="no title" charset="utf-8"/>
 </head>
     <body>
+        <?
+            if($login_status){
+                header("location: ./main.php");
+                exit(); // 이미 로그인 된 상태면 main으로
+            }
+        ?>
         <div class="login-form bg-light p-4" style="max-width: 420px; margin: 300px auto;">
             <form action="./registeration/login.inc.php" method="POST" class="row g-3">
                 <div class="col-12">

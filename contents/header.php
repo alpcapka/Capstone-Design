@@ -1,6 +1,3 @@
-<?php
-    session_start();
-?>
 <header>
     <nav class="navbar fixed-top navbar-light bg-light">
         <h1 class="logo">
@@ -16,17 +13,6 @@
             <p>SMOOTH</p>
         </h1>
         <div class="header-menu">
-            <ul class="user-menu">
-            <?php
-                if(isset($_SESSION['useremail'])){
-                    echo "<li><button type='button' onclick=\"location.href='../registeration/logout.inc.php'\" class='btn btn-outline-primary'>로그아웃</button></li>";
-                }
-
-                else{
-                    echo "오류";
-                }
-            ?>
-            </ul>
             <div class="dropdown">
                 <button type="button" class="btn btn-outline-dark" data-bs-toggle="dropdown" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">

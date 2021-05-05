@@ -17,4 +17,6 @@
 		global $conn;
 		return $conn->query($sql);
 	}
-    
+
+    session_start();
+    if( isset( $_SESSION[ 'useremail' ] ) ) {$login_status = TRUE;} // email로 접속해서 세션 값 넘어오면 login_status 활성화
