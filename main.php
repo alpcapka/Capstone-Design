@@ -24,14 +24,14 @@
       <div class="container con position-relative">
         <div class="left">
             <div class="main_profile">
+              <p class="P_id">현재 로그인 된 아이디 : <?echo $_SESSION['userid'];?> (<?if($_SESSION['role'] == 'ADMIN') {echo "ADMIN";} else {echo "user";} ?>)</p>
               <form class="logged">
                 <ul class="buttons">
                   <?php
                     if(isset($_SESSION['useremail'])){
-                        echo "<li><button type='button' onclick=\"location.href='my.php'\" class='btn btn-outline-primary'>내 정보</button></li>";
+                        echo "<li><button type='button' onclick=\"location.href='./registeration/my.php'\" class='btn btn-outline-primary'>내 정보</button></li>";
                         echo "<li><button type='button' onclick=\"location.href='../registeration/logout.inc.php'\" class='btn btn-outline-primary'>로그아웃</button></li>";
                     }
-
                     else{
                         echo "오류";
                     }

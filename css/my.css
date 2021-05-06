@@ -1,0 +1,19 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+.container {padding-top: 200px;}
+.container section {margin-top: 24px;}
+
+section, form {margin: 8px auto 0 auto; width: 480px; padding: 12px 0; box-sizing: border-box; border: 1px solid gray; border-radius: 12px;}
+section .title {padding: 12px 24px; display: flex;}
+section .title h1 {flex: auto; line-height: 30px; color: black; font-size: 22px; font-weight: bold;}
+section .title a.logout {margin-right: 10px;}
+section .title a.logout, a.back {padding: 0 12px; border-radius: 15px; line-height: 30px; color: white; font-size: 12px; font-weight: bold; background-color: #c62917;}
+section .title a {text-decoration: none;}
+section .profile {position: relative; padding-left: 72px;}
+section .profile img {position: absolute; left: 25px; border-radius: 18px; width: 36px; height: 36px;}
+section .profile h3 {line-height: 20px; color: black; font-size: 14px; font-weight: bold;}
+section .profile p span {line-height: 18px; color: gray; font-size: 12px;}
+
+form h2{padding: 12px 24px; line-height: 26px; color: black; font-size: 18px; font-weight: bold;}
+form a.item {padding: 12px 24px; text-align: center; text-decoration: none; display: block; line-height: 24px; word-wrap: break-word; color: black; font-size: 16px}
+form button {margin:12px 0 0 36px; border: 0; border-radius: 12px; width: 85%; height: 40px; color: #fff; font-size: 16px; font-weight: bold; background-color: #c62917;}

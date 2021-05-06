@@ -57,7 +57,8 @@ header .user-menu li:first-child {margin-left: 0px;}
 
 .left {position: absolute; margin: 260px 0 0 0; display: block; flex-direction: row;}
 .left .main_profile {border: 1px solid black; border-radius: 0.25rem; background-color: #f9f9f9; width: 200px; height: 220px;}
-.left .main_profile form {position: relative; top:175px;}
+.left p {margin: 10px 0 0 0; font-size: 10px; text-align: center;}
+.left .main_profile form {position: relative; top:125px;}
 .left .main_profile ul {list-style: none; display: flex; padding: 0;}
 .left .main_profile ul li {margin-left: 10px;}
 
