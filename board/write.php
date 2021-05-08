@@ -1,5 +1,5 @@
 <?
-    include "lib.php";
+    include "../lib.php";
 
     $idx = $_GET['idx']; 
     $idx = mysqli_real_escape_string($conn, $idx); 

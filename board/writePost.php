@@ -1,5 +1,5 @@
 <?
-    include "lib.php";
+    include "../lib.php";
  
     $name = $_POST['name'];
     $idx = $_POST['idx'];

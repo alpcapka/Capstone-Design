@@ -27,7 +27,7 @@
                 <hr>
                 <a  href="#" class="item">회원 정보 수정</a>
                 <hr>
-                <a  href="#" class="item">비밀번호 수정</a>
+                <a  href="./ChangePwd.php" class="item">비밀번호 수정</a>
                 <hr>
                 <button type="submit" name="submit">회원 탈퇴</button>
             </form>

@@ -1,0 +1,11 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {font-family: sans-serif; font-size: 14px; }
+input, button { font-family: inherit; font-size: inherit; }
+form {margin: 300px auto; width: 480px; height:210px; padding: 12px 0; box-sizing: border-box; border: 1px solid gray; border-radius: 12px; text-align: center;}
+
+hr {margin: 0;}
+.form1, .form2 {width: 90%;}
+.form1 {margin: 5px auto;}
+.form2 {margin: 0 auto 5px auto;}
+.btn {margin: 5px;}
