@@ -14,6 +14,4 @@
     mysqli_query($conn, $query); 
 
 ?>
-<script>
-    location.href='list.php';//
-</script>
+<meta http-equiv='refresh' content='0, list.php'>

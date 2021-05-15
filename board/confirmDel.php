@@ -4,8 +4,7 @@
     
     $idx = $_GET['idx']; 
     $idx = mysqli_real_escape_string($conn, $idx); 
- 
-
+    
 ?>
 
 

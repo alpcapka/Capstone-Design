@@ -1,5 +1,5 @@
 <div class="main">
-    <div class="cards">
+    <div class="main-cards">
         <div class="card" style="width: 18rem;">
             <div class="card-header">
                 전체게시판
@@ -36,9 +36,9 @@
             </ul>
         </div>
     </div>
-    <div class="wraptitle">
-        <button type="button" class="wraptitle-item btn btn-outline-primary" href="#">인기순</a></button>
-        <button type="button" class="wraptitle-item btn btn-outline-primary" href="#">최신순</a></button>
+    <div class="main-function">
+        <button type="button" class="main-function-item btn btn-outline-primary" href="#">인기순</a></button>
+        <button type="button" class="main-function-item btn btn-outline-primary" href="#">최신순</a></button>
         <!-- <a class="wrap title item" href="#">OO순</a> -->
         <form id="searchArticleForm" class="search">
             <select name="search type">
@@ -49,5 +49,24 @@
             </select>
             <input name="keyboard" placeholder="검색어를 입력하세요." class="text">
         </form>
+    </div>
+    <div class="main-board">
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">        
+            <div class="viewbox">     
+                <?php
+                $query = "select * from board order by idx desc";
+                $result = mysqli_query($conn, $query);
+                while($data = mysqli_fetch_array($result)){
+                ?>
+                <div class="article">
+                    <div>
+                        <h3 class="titleshow"><?=$data['title']?></h3>
+                        <p class="regdateshow">(<?=substr($data['regdate'],0,10)?>)</p>
+                    </div>
+                    <p class="memoshow"><?=$data['memo']?></p>
+                </div>     
+                <?php    }?>
+            </div>        
+        </div>
     </div>
 </div>

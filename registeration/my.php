@@ -8,6 +8,12 @@
         <link rel="stylesheet" href="../css/my.css?after" type="text/css" media="screen" title="no title" charset="utf-8"/>
     </head>
     <body>
+        <?
+            if($login_status == false){
+                header("location: ../index.php?error=NotPermission");
+                exit(); // 로그인 안돼있으면 로그인페이지로
+            }
+        ?>
         <div  class="container">
             <section>
                     <div class="title">

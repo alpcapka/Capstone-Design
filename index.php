@@ -50,7 +50,12 @@
                 else if($_GET["error"] == "wronglogin"){
                     echo "<script>alert('잘못 입력하셨습니다.');</script>";
                 }
-            }
+            
+               
+                else if($_GET["error"] == "NotPermission"){
+                        echo "<script>alert('잘못된 접근입니다.');</script>";
+                    }
+                }
             ?>
         </div>
         

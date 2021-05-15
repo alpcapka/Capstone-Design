@@ -46,13 +46,13 @@ header .user-menu li:first-child {margin-left: 0px;}
 .con {max-width:1345px; height:100%; top:54px;}
 .main {position: absolute; display: block; flex-direction: row; width:920px; margin: 25px auto; left: 215px; justify-content: center;}
 .main > div {margin-bottom: 10px;}
-.main .cards {display: flex;}
-.main .cards > div {margin-left: 28px;}
-.main .cards > div:nth-child(1) {margin: 0;}
-.main .cards li:hover { background-color: #f9f9f9; }
+.main .main-cards {display: flex;}
+.main .main-cards > div {margin-left: 28px;}
+.main .main-cards > div:nth-child(1) {margin: 0;}
+.main .main-cards li:hover { background-color: #f9f9f9; }
 
-.main .wraptitle {padding: 5px; border: 1px solid gray; border-radius: 0.25rem;}
-.main .wraptitle > form {float: right; margin-top: 5px;}
+.main .main-function {padding: 5px; border: 1px solid gray; border-radius: 0.25rem;}
+.main .main-function > form {float: right; margin-top: 5px;}
 
 
 .left {position: absolute; margin: 260px 0 0 0; display: block; flex-direction: row;}
@@ -62,5 +62,13 @@ header .user-menu li:first-child {margin-left: 0px;}
 .left .main_profile ul {list-style: none; display: flex; padding: 0;}
 .left .main_profile ul li {margin-left: 10px;}
 
-.right {position: absolute; margin: 260px 0 0 1121px; display: block; flex-direction: row;}
+.right {position: absolute; margin: 260px 0 0 1126px; display: block; flex-direction: row;}
 .right .testbox {border: 1px solid black; border-radius: 0.25rem; background-color: #f9f9f9; width: 200px; height: 220px;}
+
+.viewbox .article {border:1px solid gray; border-radius: .25rem; margin-bottom: 10px; padding:10px;}
+.viewbox .titleshow{float:left;}
+.viewbox .regdateshow{text-align: center; float:right;}
+.viewbox .article div {margin-bottom: 10px; height: 50px;}
+
+.article h3 {color: black;}
+.article p {color: black;}

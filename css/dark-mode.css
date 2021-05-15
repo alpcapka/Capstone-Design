@@ -43,3 +43,6 @@
 }
 
 [data-theme="dark"] .sidenav ul a {color: white;}
+
+[data-theme="dark"] .article h3 {color: white;}
+[data-theme="dark"] .article p {color: white;}
