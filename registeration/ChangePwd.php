@@ -42,7 +42,7 @@ if ( !is_null( $current_Pwd ) ) {
     <link rel="stylesheet" href="../css/ChangePwd.css?after" type="text/css" media="screen" title="no title" charset="utf-8"/>
   </head>
   <body>
-    <form action="changePwd.php" method="POST">
+    <form action="ChangePwd.php" method="POST">
         <h1>비밀번호 변경</h1>
         <hr>
         <input type="password" name="current_Pwd" class="form-control form1" placeholder="현재 비밀번호" required>

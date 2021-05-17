@@ -13,6 +13,7 @@
             <th scope="col">Name</th>
             <th scope="col">Date</th>
             <th scope="col">IP</th>
+            <th scope="col"></th>
             </tr>
         </thead>
         <?
@@ -24,11 +25,12 @@
         ?>
         <tbody>
             <tr>
-                <td> <?=$data['idx']?> </td>
-                <td> <a href="view.php?idx=<?=$data['idx']?>" style="color:black; text-decoration:none;"><?=$data['title']?></a> </td>
-                <td> <?=$data['name']?> </td>
-                <td> <?=substr($data['regdate'],0,10)?> </td>
-                <td> <?=$data['ip']?> </td>
+                <td><?=$data['idx']?> </td>
+                <td><a href="view.php?idx=<?=$data['idx']?>" style="color:black; text-decoration:none;"><?=$data['title']?></a> </td>
+                <td><?=$data['name']?> </td>
+                <td><?=substr($data['regdate'],0,10)?> </td>
+                <td><?=$data['ip']?> </td>
+                <td><button type="button" onclick="location.href='confirmDel.php?idx=<?=$data['idx']?>'">삭제</button></td>
             </tr>
         <? } ?>
         </tbody>

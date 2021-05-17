@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="../css/registeration.css?after" type="text/css" media="screen" title="no title" charset="utf-8"/>
 </head>
 <body>
+    <?
+        if($login_status){
+            header("location: ./main.php");
+            exit(); // 이미 로그인 된 상태면 main으로
+        }
+    ?>
     <div class="signup-form">
         <form action="Signup.inc.php" method="post">
             <h2>Sign Up</h2>
