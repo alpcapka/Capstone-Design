@@ -83,7 +83,7 @@ function uidExists($conn, $usersName, $usersEmail){
 }
 
 function createUser($conn, $usersName, $usersEmail, $usersPwd){
-    $sql = "INSERT INTO users (usersUid, usersEmail, usersPwd) VALUES (?, ?, ?);";
+    $sql = "INSERT INTO users (usersUid, usersEmail, usersPwd, created) VALUES (?, ?, ?, NOW());";
     $stmt = mysqli_stmt_init($conn);
     $mqq = mq("alter table users auto_increment = 1"); // 삭제해도 순번대로 다시 idx값 재설정
     

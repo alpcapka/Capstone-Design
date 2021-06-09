@@ -1,8 +1,14 @@
-/* my info section */
-* {margin: 0; padding: 0; box-sizing: border-box;}
+body {background-color: #DAE0E6;}
 
-.container {padding-top: 200px;}
-.container section {margin-top: 24px;}
+.tablebox {position: relative; margin: 50px auto; padding: 200px;}
+.tablebox hr {color: black; height: 4px; width: 1520px auto;}
+.tablebox > table > thead > tr > th {text-align: center;}
+.tablebox > table > tbody > tr > td {text-align: center;}
+
+
+
+
+/* * {margin: 0; padding: 0; box-sizing: border-box;}
 
 section, form {margin: 8px auto 0 auto; width: 480px; padding: 12px 0; box-sizing: border-box; border: 1px solid gray; border-radius: 12px;}
 section .title {padding: 12px 24px; display: flex;}
@@ -16,4 +22,4 @@ section .profile p span {line-height: 18px; color: gray; font-size: 12px;}
 
 form h2{padding: 12px 24px; line-height: 26px; color: black; font-size: 18px; font-weight: bold;}
 form a.item {padding: 12px 24px; text-align: center; text-decoration: none; display: block; line-height: 24px; word-wrap: break-word; color: black; font-size: 16px}
-form button {margin:12px 0 0 36px; border: 0; border-radius: 12px; width: 85%; height: 40px; color: #fff; font-size: 16px; font-weight: bold; background-color: #c62917;}
+form button {margin:12px 0 0 36px; border: 0; border-radius: 12px; width: 85%; height: 40px; color: #fff; font-size: 16px; font-weight: bold; background-color: #c62917;} */

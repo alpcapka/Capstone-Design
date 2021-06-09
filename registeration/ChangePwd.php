@@ -12,7 +12,7 @@ $new_Pwd = $_POST[ 'new_Pwd' ];
 $new_Pwd_confirm = $_POST[ 'new_Pwd_confirm' ];
 
 if ( !is_null( $current_Pwd ) ) {
-    $conn = mysqli_connect( 'localhost', 'student', 'gkrtod123', 'study' );
+    $conn = mysqli_connect( 'localhost', 'admin', 'capstone123@', 'capstone', '3306');
     $sql = "SELECT usersPwd FROM users WHERE usersUid = '$userUid'";
     $result = mysqli_query( $conn, $sql );
     while ( $row = mysqli_fetch_array( $result ) ) {

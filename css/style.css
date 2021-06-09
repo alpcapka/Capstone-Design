@@ -1,4 +1,8 @@
+/* main section */
+
 * {margin: 0; padding: 0;}
+
+body {background-color: #DAE0E6;}
 
 /* header */
 .navbar {z-index: 5; border-bottom: 2px solid black; width: 100%; min-width: 450px; height: 54px; margin: 0; text-align: center; vertical-align: middle; padding: .5rem 0;}
@@ -35,40 +39,47 @@ header .user-menu li:first-child {margin-left: 0px;}
 }
 .sidenav.visible {width: 350px; opacity: 1; visibility: visible;}
 .sidenav .sidenav-menu-link {position: relative;}
-.sidenav ul {padding: 0; list-style: none;}
+.sidenav ul {padding: 0; list-style: none; margin-bottom: 0;}
 .sidenav ul a{display: block; height: 100%; width: 100%; line-height: 65px; font-size: 20px; color: black; text-decoration: none; padding-left: 10px; box-sizing: border-box; border-bottom: 1px solid gray; border-top: 1px solid rgba(255,255,255,.1); transition: .4s;}
 .sidenav ul li:hover a{ padding-left: 50px;}
 .sidenav svg {margin-right: 10px;}
+.sidenav h3 {font-size: 12px; color: gray; font-weight: 700; letter-spacing: .5px; line-height: 12px; text-transform: uppercase; margin: 10px 0 5px 5px;}
 
 .sidenav-background {z-index: 3; position: fixed; top:0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.8); transition: all .3s; opacity: 0; visibility: hidden;}
 .sidenav-background.visible {opacity: 1; visibility: visible;}
 
-.con {max-width:1345px; height:100%; top:54px;}
-.main {position: absolute; display: block; flex-direction: row; width:920px; margin: 25px auto; left: 215px; justify-content: center;}
-.main > div {margin-bottom: 10px;}
-.main .main-cards {display: flex;}
-.main .main-cards > div {margin-left: 28px;}
-.main .main-cards > div:nth-child(1) {margin: 0;}
-.main .main-cards li:hover { background-color: #f9f9f9; }
+/* board card container */
+.con-cards {position: relative; margin: 75px auto 25px auto; display: flex;}
+.con-cards > div {width: 18rem; height: 250px; margin-left: 20px; border:1px solid darkgray; border-radius: 0.25rem;}
+.con-cards > div:nth-child(1) {margin-left: 40px;}
+.con-cards > .card-header {background-color: #f9f9f9; font-weight: bold;}
+.con-cards > li:hover { background-color: #f9f9f9;}
+.con-cards ul > li {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.con-cards ul > li > a {color: black; text-decoration: none;}
+.con-cards iframe {border-radius: 0.25rem;}
 
-.main .main-function {padding: 5px; border: 1px solid gray; border-radius: 0.25rem;}
-.main .main-function > form {float: right; margin-top: 5px;}
+/* main contatiner (left) */
+.con-main {position: relative; display: flex;}
+.con-main > .left {width: 200px; margin-left: 40px;}
+.con-main > .left > div {margin-bottom: 10px;}
+.con-main > .left > .main_profile {height: 300px; border: 1px solid darkgray; border-radius: 0.25rem; background-color: rgba(255,255,255, 0.9);}
+.con-main > .left > .main_profile > form {text-align: center; padding: 24px 20px; margin: 39px auto;}
+.con-main > .left > .main_profile > form > img {width: 100px; height: 100px;}
+.con-main > .left > .main_profile > form > p {font-weight: bold; font-size: 15px; margin: 10px auto;}
+.con-main > .left > .main_profile > form > ul {padding: 0; margin: 0; list-style: none; display: flex; justify-content: center;}
+.con-main > .left > .main_profile > form > ul > li:nth-child(2) {margin-left: 10px;}
+
+.con-main > .left > a > img {width: 200px; height: 100px; border: 1px solid darkgray; border-radius: 0.25rem; margin-bottom: 10px;}
+
+/* main contatiner (center) */
+.con-main > .center {margin-left: 10px; width: 1000px;}
+.con-main > .center > .main-function {padding: 5px; border: 1px solid darkgray; border-radius: 0.25rem; background-color: #fff; width: 100%;}
+.con-main > .center > .main-function > form {float: right; margin-top: 5px; margin-bottom: 10px;}
+.con-main > .center .viewbox > .article {border:1px solid darkgray; border-radius: .25rem; margin-bottom: 10px; padding:10px; background-color: #fff; width: 100%;}
+.con-main > .center .viewbox > .article > div {margin-bottom: 10px; height: 50px;}
+.con-main > .center .viewbox > .article > div > a {color:black; text-decoration:none;}
+.con-main > .center .viewbox > .article > p {color: black;}
+.con-main > .center .viewbox > .article > div > .titleshow {float:left;}
+.con-main > .center .viewbox > .article > div > .regdateshow {text-align: center; float:right;}
 
 
-.left {position: absolute; margin: 260px 0 0 0; display: block; flex-direction: row;}
-.left .main_profile {border: 1px solid black; border-radius: 0.25rem; background-color: #f9f9f9; width: 200px; height: 220px;}
-.left p {margin: 10px 0 0 0; font-size: 10px; text-align: center;}
-.left .main_profile form {position: relative; top:125px;}
-.left .main_profile ul {list-style: none; display: flex; padding: 0;}
-.left .main_profile ul li {margin-left: 10px;}
-
-.right {position: absolute; margin: 260px 0 0 1126px; display: block; flex-direction: row;}
-.right .testbox {border: 1px solid black; border-radius: 0.25rem; background-color: #f9f9f9; width: 200px; height: 220px;}
-
-.viewbox .article {border:1px solid gray; border-radius: .25rem; margin-bottom: 10px; padding:10px;}
-.viewbox .titleshow{float:left;}
-.viewbox .regdateshow{text-align: center; float:right;}
-.viewbox .article div {margin-bottom: 10px; height: 50px;}
-
-.article h3 {color: black;}
-.article p {color: black;}

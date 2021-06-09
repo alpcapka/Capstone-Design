@@ -1,48 +1,36 @@
-[data-theme="dark"] header .logo p {
-  color: white;
-}
+/* dark mode section */
 
-[data-theme="dark"] .logo .menu-button span {
-  background-color: white;
-}
+[data-theme="dark"] header .logo p {color: white;}
 
-[data-theme="dark"] .logo .menu-button.active span {
-  background-color: white;
-}
+[data-theme="dark"] .logo .menu-button span {background-color: white;}
 
-[data-theme="dark"] {
-  background-color: #1c1e21;
-}
+[data-theme="dark"] .logo .menu-button.active span {background-color: white;}
 
-[data-theme="dark"] .btn-outline-primary {
-  color: #28a745;
-  border: 1px solid #28a745;
-}
+[data-theme="dark"] {background-color: #030303;}
 
-[data-theme="dark"] .btn-outline-primary:hover {
-  color: white;
-  background-color: #28a745;
-  border-color: #28a745;
-}
+[data-theme="dark"] .btn-outline-primary {color: #28a745; border: 1px solid #28a745;}
 
-[data-theme="dark"] .btn-outline-primary:not(:disabled):not(.disabled):active{
-  color: white;
-  background-color: #28a745;
-  border-color: #28a745;
-}
+[data-theme="dark"] .btn-outline-primary:hover {color: white; background-color: #28a745; border-color: #28a745;}
 
-[data-theme="dark"] .btn-outline-dark {
-  border: 1px solid white;
-  color: white;
-}
+[data-theme="dark"] .btn-outline-primary:not(:disabled):not(.disabled):active{color: white; background-color: #28a745; border-color: #28a745;}
 
-[data-theme="dark"] .btn-outline-dark:hover {
-  color: black;
-  background-color: white;
-  border-color: white;
-}
+[data-theme="dark"] .btn-outline-dark {border: 1px solid white; color: white;}
+
+[data-theme="dark"] .btn-outline-dark:hover {color: black; background-color: white; border-color: white;}
+
+[data-theme="dark"] .con-cards div{color: white; background-color: #1A1A1B; border-color: white;}
+[data-theme="dark"] .con-cards div ul li{color: white; background-color: #1A1A1B; border-color: white;}
+[data-theme="dark"] .con-cards div ul li a{color: white;}
+[data-theme="dark"] .con-cards .card .card-header{color: white; background-color: #1A1A1B;}
+
+[data-theme="dark"] .con-main .center .main-function {background-color: #1A1A1B;}
 
 [data-theme="dark"] .sidenav ul a {color: white;}
 
-[data-theme="dark"] .article h3 {color: white;}
-[data-theme="dark"] .article p {color: white;}
+[data-theme="dark"] .con-main .center .main-board .article {background-color: #1A1A1B;}
+[data-theme="dark"] .con-main .center .main-board .article h3 {color: white; background-color: #1A1A1B;}
+[data-theme="dark"] .con-main .center .main-board .article p {color: white; background-color: #1A1A1B;}
+
+[data-theme="dark"] .left .main_profile {color: white; background-color: #1A1A1B; border-color: white;}
+
+[data-theme="dark"] .left .left-card {color: white; background-color: #1A1A1B; border-color: white;}

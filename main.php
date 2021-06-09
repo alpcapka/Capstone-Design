@@ -23,40 +23,15 @@
     <div id="wrap">
       <!-- header -->
       <?
-      require_once ("./contents/header.php");
+        require_once ("./contents/header.php");
       ?>
-      
-      <!-- container -->
-      <div class="container con position-relative">
-        <div class="left">
-            <div class="main_profile">
-              <p class="P_id">현재 로그인 된 아이디 : <?echo $_SESSION['userid'];?> (<?if($_SESSION['role'] == 'ADMIN') {echo "ADMIN";} else {echo "user";} ?>)</p>
-              <form class="logged">
-                <ul class="buttons">
-                  <?php
-                    if(isset($_SESSION['useremail'])){
-                        echo "<li><button type='button' onclick=\"location.href='./registeration/my.php'\" class='btn btn-outline-primary'>내 정보</button></li>";
-                        echo "<li><button type='button' onclick=\"location.href='../registeration/logout.inc.php'\" class='btn btn-outline-primary'>로그아웃</button></li>";
-                    }
-                    else{
-                        echo "오류";
-                    }
-                  ?>
-                </ul>
-              </form>
-            </div>
-        </div>
-        <?
-        require_once ("./contents/mainboard.php");
-        ?>
-        <div class="right">
-          <div class="testbox">
-
-          </div>
-        </div>
-      </div>
-    </div>  
-      
+      <?
+        require_once ("./contents/b_cards.php");
+      ?>
+      <?
+        require_once ("./contents/maincon.php");
+      ?>
+    </div>
     <!-- bootstrap script -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>

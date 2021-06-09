@@ -1,4 +1,4 @@
-<?
+<?php
     require_once ('../lib.php')
 ?>
 <!doctype hmtl>
@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="../css/my.css?after" type="text/css" media="screen" title="no title" charset="utf-8"/>
     </head>
     <body>
-        <?
+        <?php
             if($login_status == false){
                 header("location: ../index.php?error=NotPermission");
                 exit(); // 로그인 안돼있으면 로그인페이지로
@@ -35,6 +35,10 @@
                 <hr>
                 <a  href="./ChangePwd.php" class="item">비밀번호 수정</a>
                 <hr>
+                <?if($_SESSION['role'] == 'ADMIN') {?>
+                    <a  href="../crawling/crawlingcsv.php" class="item">공지사항 새로고침 하기 (관리자 기능)</a>
+                    <hr>
+                <?}?>
                 <button type="submit" name="submit">회원 탈퇴</button>
             </form>
         </div>

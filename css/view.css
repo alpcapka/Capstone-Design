@@ -1,0 +1,7 @@
+body {background-color: #DAE0E6;}
+
+table{position: relative; margin: 50px auto; padding: 200px; width: 800px; border: 1px solid;}
+table tr th {width: 100px;}
+
+.con-reply .reply_view {margin: 50px auto; padding: 50px;}
+.con-reply .reply_view > div {background-color: white;}
